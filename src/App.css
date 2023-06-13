@@ -1,0 +1,125 @@
+body{
+	background: linear-gradient(90deg, rgba(222,230,231,1) 0%, rgb(54, 69, 79) 120%);
+	height: 100%;
+}
+.app{
+	overflow-x: hidden;
+}
+.app-header{
+	display: flex;
+	flex-direction: column;
+}
+.app-body h1{
+	color: navy;
+	font-weight: bold;
+	text-align: center;
+}
+.info-container{
+	display: flex;
+	justify-content: space-between;
+	width: 35vw;
+	align-self: center;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	margin: 1% 0;
+}
+.info-container *{
+	align-self: center;
+}
+.page{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+	border-radius: 5px;
+	margin: 1%;
+	padding: 1%;
+	transform: translateX(5%);
+	width: 15vw;
+}
+.info{
+	background-color: slateblue	;
+	width: 100vw;
+}
+.info *{
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+.page h4{
+	font-weight: bold;
+	color: white;
+}
+.page button{
+	padding: 5%;
+	border: none;
+	border-radius: 5px;
+	background-color: steelblue;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0 1vw;
+}
+.app-body{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.app-body *{
+	width: 30vw;
+	height: 60vh;
+	border-radius:5%;
+	margin: 1%;
+}
+.search{
+	display: flex;
+}
+.search input{
+	margin: 3% 5%;
+	width: 15vw;
+	height: 5vh;
+	border-radius: 15px;
+	font-weight: bold;
+	padding: 3%;
+	border: 3px solid teal;
+}
+.search button{
+	margin: 3% 5%;
+	width: 10vw;
+	height: 5vh;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 3%;
+	border: 3px solid tomato;
+	background-color:tomato;
+	color: white
+}
+.perPage{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0% 3%;
+	width: 20vw;
+	transform: translateY(0%)
+}
+.perPage-selection{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 3%;
+}
+.perPage h2,.perPage h3{
+	margin: 0 5%;
+	padding: 0 5%;
+	border-radius: 10%;
+	color: navy
+}
+.app-footer{
+	display: flex;
+	justify-content: flex-end;
+	width: 100vw;
+}
+.app-footer *{
+	justify-content: center;
+	text-align: center;
+}
