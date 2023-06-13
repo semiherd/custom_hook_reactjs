@@ -1,10 +1,10 @@
 import React,{forwardRef} from "react"
 
 const Footer = forwardRef((props,ref) => {
-	const {hookResponse,searchVal}= props
-	const {error,refreshFn}= hookResponse
+  const {hookResponse,searchVal}= props
+  const {error,refreshFn}= hookResponse
 
-	async function refresh(){
+  async function refresh(){
     try{
       if(!error){
         ref.current.page += parseInt(1);
@@ -25,13 +25,13 @@ const Footer = forwardRef((props,ref) => {
     return <h4>You reached end of the gallery</h4>
   }
 
-	return (
-		<>
-			<div className="page">
-        {error? <Info />:<NextButton />}
-      </div>
-		</>
-	)
+  return (
+	<>
+	  <div className="page">
+        	{error? <Info />:<NextButton />}
+      	  </div>
+	</>
+  )
 })
 
 export default Footer;
